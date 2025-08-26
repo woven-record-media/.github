@@ -54,15 +54,15 @@ Create and maintain these key documents in each repository:
 ### Planning Workflow
 1. **Create GitHub Issue** - Describe use case, desired outcome, and implementation approach
 2. **Planning Mode** - Work with Claude to develop detailed implementation plan
-3. **Save Plan** - Document plan in `{PLAN_NAME}.md` file and update GitHub issue
-4. **Track Progress** - Update planning documents and issues as work progresses
+3. **Save Plan** - Document plan in the GitHub issue
+4. **Track Progress** - Update issues as work progresses
 
 ### GitHub Workflow
 1. **Branch Protection** - Never edit files directly on main branch
 2. **Issue → Plan → Branch** - Create new branch for each planned task
 3. **Commits** - Have Claude handle commits with descriptive messages
-4. **Pull Request** - Create as draft, get Copilot review, address findings
-5. **Documentation Updates** - Update ARCHITECTURE.md, spec files, and README as needed
+4. **Pull Request** - Create as draft, get Copilot review, get `/security-review` address findings (write agents for this in the future)
+5. **Documentation Updates** - Update ARCHITECTURE.md including diagrams, spec files, and README as needed
 6. **Merge** - Merge to main after testing and documentation updates
 
 ### Best Practices
@@ -98,6 +98,7 @@ npm run deploy
 
 ### Prerequisites
 - **AWS CLI** - Configured with appropriate credentials
+- **wrangler** - For Cloudflare deployments
 - **Node.js** - For TypeScript/Vue.js development
 - **Python** - For video processing pipeline
 - **Terraform** - For infrastructure management
